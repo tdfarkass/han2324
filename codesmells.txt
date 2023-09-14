@@ -1,0 +1,13 @@
+ALGEMEEN
+De opmerkingen zijn inconsistent. Ze zijn vaak niet aanwezig.
+Veel ongebruikte code verpest de leesbaarheid
+Over het algemeen zijn functie- of variabelenamen beschrijvend, maar hier en daar kun je een afkorting vinden die opvalt.
+CONTRIBUTION
+stringbuilding zou een eigen functie kunnen krijgen, omdat deze vaak wordt gebruikt tussen getCategoryStr en parseCategories - DRY
+AVAILABLE CONTRIBUTION
+De methode writePropertiesFile lijkt code te dupliceren die verband houdt met het lezen en schrijven van eigenschappen uit de StringDict.
+“ writePropertiesFile(File propFile)”  heeft veel if-statements die mogelijk kunnen worden geherstructureerd of vereenvoudigd
+Gebruikt stringbuilder op de ene plaats, concatenation op de andere.
+LOCAL CONTRIBUTION
+Te veel functies die zich bezighouden met markeren, zouden kunnen worden vereenvoudigd
+remove is enorm en kan opnieuw worden bewerkt
